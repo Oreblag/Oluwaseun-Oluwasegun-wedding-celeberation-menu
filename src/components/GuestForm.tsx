@@ -39,7 +39,7 @@ export default function GuestForm() {
                   : 'bg-blue-500 hover:bg-blue-600'
               } text-white`}
             >
-              Groom's Wing
+              Groom&apos;s Wing
             </Button>
             <Button 
               onClick={() => setWing('bride')}
@@ -49,7 +49,7 @@ export default function GuestForm() {
                   : 'bg-pink-500 hover:bg-pink-600'
               } text-white`}
             >
-              Bride's Wing
+              Bride&apos;s Wing
             </Button>
           </div>
           
