@@ -14,8 +14,8 @@ import "./globals.css";
 // });
 
 export const metadata: Metadata = {
-  title: "Wedding Menu",
-  description: "Guest Menu Course Selection",
+  title: "Oluwaseun & Oluwasegun Wedding Menu",
+  description: "Guest's Menu Course Selection",
 };
 
 // export default function RootLayout({
