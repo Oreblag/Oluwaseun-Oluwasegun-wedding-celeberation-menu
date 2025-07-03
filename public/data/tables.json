@@ -1,0 +1,10 @@
+{
+    "groom": {
+      "1": ["John Smith", "Emma Johnson", "Michael Brown"],
+      "2": ["Sarah Williams", "David Miller"]
+    },
+    "bride": {
+      "1": ["Jennifer Davis", "Christopher Garcia"],
+      "2": ["Amanda Rodriguez", "Matthew Martinez"]
+    }
+}

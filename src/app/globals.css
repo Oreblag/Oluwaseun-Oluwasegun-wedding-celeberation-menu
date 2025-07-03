@@ -1,0 +1,207 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+
+body {
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.main-card {
+  margin: auto !important;
+  margin-top: 80px !important;
+  padding: 60px !important;
+}
+
+header {
+  margin-top: 40px !important;
+}
+header h1 {
+  font-size: 50px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: bold !important;
+  padding-bottom: 10px !important;
+}
+
+header p {
+  font-size: 25px !important;
+  margin-top: 25px !important;
+}
+
+.form-card {
+  padding: 30px !important;
+  background-blend-mode: darken !important;
+  background: rgba(0, 0, 0, 0.397) !important;
+}
+
+.g-button {
+  color: blue !important;
+  background-color: antiquewhite !important;
+  border-radius: 2px !important;
+}
+
+.b-button {
+  color: #FF1493 !important;
+  background-color: antiquewhite !important;
+  border-radius: 2px !important;
+}
+
+.g-button:hover {
+  color: white !important;
+  background-color: blue !important;
+  cursor: pointer !important;
+  transition: 0.98s ease-in !important;
+}
+
+.g-button:active {
+  transform: scale(0.98) !important;
+}
+
+.b-button:hover {
+  color: white !important;
+  background-color: #FF1493 !important;
+  cursor: pointer !important;
+  transition: 0.98s ease-in !important;
+}
+
+.b-button:active {
+  transform: scale(0.98) !important;
+}
+
+.g-form-header {
+  margin-bottom: 10px !important;
+}
+
+.g-form-subheader {
+  margin-top: 10px !important;
+}
+
+.select-contnt {
+  padding: 12px !important;
+  line-height: 15px !important;
+  cursor: pointer !important;
+}
+
+.name-input {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  padding: 10px !important;
+}
+
+.g-form-menubtn {
+  border: 1px solid black !important;
+  border-radius: 3px !important;
+  cursor: pointer !important;
+}
+
+.g-form-menubtn:hover {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid white !important;
+  transition: 0.98s ease-in !important;
+}
+
+.g-form-menubtn:active {
+  transform: scale(0.98) !important;
+}
+
+.menuSelect-card {
+  padding: 10px !important;
+}
+.menu-subhead {
+  margin-top: 8px !important;
+}
+
+.menuSbmtbtn {
+  border: 1px solid black !important;
+  border-radius: 3px !important;
+  cursor: pointer !important;
+  margin-top: 10px !important;
+}
+
+/* .menuSelect {
+  background-color: grey !important;
+} */
+
+.menuSelect-ctnt {
+  padding: 8px !important;
+}
+.order-msg {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.menuSbmtbtn:hover {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid white !important;
+  transition: 0.98s ease-in !important;
+}
+
+.menuSbmtbtn:active {
+  transform: scale(0.98) !important;
+}
+
+
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
