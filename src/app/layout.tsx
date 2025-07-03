@@ -90,6 +90,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta name="apple-mobile-web-app-title" content="O&O wedding Menu" />
       <body className="relative min-h-screen bg-cover bg-center" 
             style={{ backgroundImage: "url('/images/couple.jpeg')" }}>
         {/* Dark overlay */}
