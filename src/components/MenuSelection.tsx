@@ -52,13 +52,13 @@ export default function MenuSelection({ guest, onBack }: { guest: Guest; onBack:
   if (result) {
     return (
       <div className="text-center p-6 animate-fade-in">
-        <div className={`text-2xl ${result.success ? 'text-green-600' : 'text-red-600'} mb-4`}>
+        <div className={`order-msg text-2xl ${result.success ? 'text-green-600' : 'text-red-600'} mb-4`}>
           {result.success ? '🎉 Order Placed! 🎉' : 'Error'}
         </div>
         <p className="order-msg mb-6">{result.message}</p>
         {result.success ? (
           <div className="bg-rose-50 border border-rose-200 rounded-lg p-4 animate-fade-in">
-            <p className="text-rose-700">Your order has been sent to the kitchen</p>
+            <p className="text-rose-700">Your order has been sent to the kitchen.</p>
           </div>
         ) : (
           <Button onClick={() => setResult(null)} className="bg-rose-600 hover:bg-rose-700">

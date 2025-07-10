@@ -30,27 +30,41 @@ export default function GuestForm() {
           <h2 className="g-form-header text-2xl font-bold text-center text-rose-600 animate-slide-up">
             Please Select Your Table
           </h2>
-          <div className="grid grid-cols-2 gap-4 animate-slide-up delay-100">
-            <Button 
-              onClick={() => setWing('groom')}
-              className={`g-button h-24 transition-all duration-300 cursor-pointer ${
-                wing === 'groom' 
-                  ? 'bg-blue-600 scale-105' 
-                  : 'bg-blue-500 hover:bg-blue-600'
-              } text-white`}
-            >
-              Groom&apos;s Wing
+          <div className="btn-bdy grid grid-cols-2 gap-4 animate-slide-up delay-100">
+
+            <Button className='button-3d'>
+              <div className="button-outer">
+                <div className="button-inner">
+                  <span 
+                      onClick={() => setWing('groom')}
+                      className={`g-button h-24 transition-all duration-300 cursor-pointer ${
+                        wing === 'groom' 
+                          ? 'bg-blue-600 scale-105' 
+                          : 'bg-blue-500 hover:bg-blue-600'
+                      } text-white`}>
+                    Groom&apos;s Wing
+                  </span>
+                </div>
+              </div>
             </Button>
-            <Button 
-              onClick={() => setWing('bride')}
-              className={`b-button h-24 transition-all duration-300 cursor-pointer ${
-                wing === 'bride' 
-                  ? 'bg-pink-600 scale-105' 
-                  : 'bg-pink-500 hover:bg-pink-600'
-              } text-white`}
-            >
-              Bride&apos;s Wing
+            <Button className='button-3d'>
+              <div className="button-outer">
+                <div className="button-inner">
+                  <span 
+                      onClick={() => setWing('bride')}
+                      className={`b-button h-24 transition-all duration-300 cursor-pointer ${
+                        wing === 'bride' 
+                          ? 'bg-pink-600 scale-105' 
+                          : 'bg-pink-500 hover:bg-pink-600'
+                      } text-white`}>
+                        Bride&apos;s Wing
+                  </span>
+                </div>
+              </div>
             </Button>
+
+
+
           </div>
           
           {wing && (

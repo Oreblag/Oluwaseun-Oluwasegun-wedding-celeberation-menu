@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
-import Image from 'next/image';
 import "./globals.css";
 
 // const geistSans = Geist({
@@ -94,18 +93,8 @@ export default function RootLayout({
       <body className="relative min-h-screen bg-cover bg-center" 
             style={{ backgroundImage: "url('/images/couple.jpeg')" }}>
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-        
-        {/* Logo */}
-        <div className="absolute top-4 left-4 z-10">
-          <Image 
-            src="/images/logo-img.png" 
-            alt="Wedding Logo" 
-            width={80} 
-            height={80} 
-            className="rounded-full border-2 border-white shadow-xl"
-          />
-        </div>
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+
         
         <div className="relative z-10">
           {children}

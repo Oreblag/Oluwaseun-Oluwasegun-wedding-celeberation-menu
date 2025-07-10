@@ -28,6 +28,64 @@
 } */
 
 
+@media (min-width: 320px) {
+  .header-sec {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 20px !important;
+    gap: 2 !important;
+    overflow: hidden !important;
+  }
+  .header-one {
+    font-size: 20px !important;
+    margin-top: 10px !important;
+    overflow: hidden !important;
+  }
+  .header-two {
+    font-size: 18px !important;
+    margin: 50px 20px 0px 20px !important;
+    overflow: hidden !important;
+  }
+  .form-card {
+    padding: 10px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+
+  }
+  .order-msg {
+    font-size: 18px !important;
+    overflow: hidden !important;
+  }
+}
+@media (min-width: 375px) {}
+@media (max-width: 460px) {
+  .btn-bdy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+
+  }
+}
+@media (min-width: 768px) {
+  .header-sec {
+    gap: 40px !important;
+  }
+  .header-one {
+    font-size: 25px !important;
+    font-weight: bolder !important;
+  }
+  .header-two {
+    font-size: 20px !important;
+    margin: 70px 20px 0px 20px !important;
+  }
+}
+@media (min-width: 1024px) {}
+@media (min-width: 1440px) {}
+@media (min-width: 2560px) {}
+
 
 body {
   color: #fff;
@@ -36,18 +94,21 @@ body {
 
 .main-card {
   margin: auto !important;
-  margin-top: 80px !important;
-  padding: 60px !important;
+  margin-top: 0px !important;
+  padding: 10px 40px 40px 40px !important;
+  overflow: hidden !important;
 }
 
 header {
   margin-top: 40px !important;
+  overflow: hidden !important;
 }
 header h1 {
   font-size: 50px !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   font-weight: bold !important;
   padding-bottom: 10px !important;
+  overflow: hidden !important;
 }
 
 header p {
@@ -59,22 +120,30 @@ header p {
   padding: 30px !important;
   background-blend-mode: darken !important;
   background: rgba(0, 0, 0, 0.397) !important;
+  overflow: hidden !important;
 }
+
 
 .g-button {
   color: blue !important;
   background-color: antiquewhite !important;
-  border-radius: 2px !important;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden !important;
 }
 
 .b-button {
   color: #FF1493 !important;
   background-color: antiquewhite !important;
-  border-radius: 2px !important;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  overflow: hidden !important;
 }
 
 .g-button:hover {
-  color: white !important;
+  color: #FF1493 !important;
   background-color: blue !important;
   cursor: pointer !important;
   transition: 0.98s ease-in !important;
@@ -85,7 +154,7 @@ header p {
 }
 
 .b-button:hover {
-  color: white !important;
+  color: blue !important;
   background-color: #FF1493 !important;
   cursor: pointer !important;
   transition: 0.98s ease-in !important;
@@ -94,6 +163,168 @@ header p {
 .b-button:active {
   transform: scale(0.98) !important;
 }
+
+
+
+.btn-bdy {
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 3px;
+  background-color: rgba(225, 225, 225, 1);
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.button-3d {
+  all: unset;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: relative;
+  border-radius: 1vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: -0.15em -0.15em 0.15em -0.075em rgba(5, 5, 5, 0.25),
+      0.0375em 0.0375em 0.0675em 0 rgba(5, 5, 5, 0.1);
+
+}
+
+.button-3d::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: calc(100% + 0.3em);
+  height: calc(100% + 0.3em);
+  top: -0.15em;
+  left: -0.15em;
+  border-radius: inherit;
+  background: linear-gradient(-135deg,
+          rgba(5, 5, 5, 0.5),
+          transparent 20%,
+          transparent 100%);
+  filter: blur(0.0125em);
+  opacity: 0.25;
+  mix-blend-mode: multiply;
+}
+
+.button-3d .button-outer {
+  position: relative;
+  z-index: 1;
+  border-radius: inherit;
+  transition: box-shadow 300ms ease;
+  will-change: box-shadow;
+  box-shadow: 0 0.05em 0.05em -0.01em rgba(5, 5, 5, 1),
+      0 0.01em 0.01em -0.01em rgba(5, 5, 5, 0.5),
+      0.15em 0.3em 0.1em -0.01em rgba(5, 5, 5, 0.25);
+}
+
+.button-3d:hover .button-outer {
+  background-color: #FF1493 !important;
+  box-shadow: 0 0 0 0 rgba(5, 5, 5, 1), 0 0 0 0 rgba(5, 5, 5, 0.5),
+      0 0 0 0 rgba(5, 5, 5, 0.25);
+}
+
+.button-inner {
+  --inset: 0.035em;
+  position: relative; 
+  z-index: 1;
+  border-radius: inherit;
+  padding: 1em 1.5em;
+  background-image: linear-gradient(135deg,
+          rgba(230, 230, 230, 1),
+          rgba(180, 180, 180, 1));
+  transition: box-shadow 300ms ease, clip-path 250ms ease,
+      background-image 250ms ease, transform 250ms ease;
+  will-change: box-shadow, clip-path, background-image, transform;
+  overflow: clip;
+  clip-path: inset(0 0 0 0 round 1vw);
+  box-shadow:
+      /* 1 */
+      0 0 0 0 inset rgba(5, 5, 5, 0.1),
+      /* 2 */
+      -0.05em -0.05em 0.05em 0 inset rgba(5, 5, 5, 0.25),
+      /* 3 */
+      0 0 0 0 inset rgba(5, 5, 5, 0.1),
+      /* 4 */
+      0 0 0.05em 0.2em inset rgba(255, 255, 255, 0.25),
+      /* 5 */
+      0.025em 0.05em 0.1em 0 inset rgba(255, 255, 255, 1),
+      /* 6 */
+      0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
+      /* 7 */
+      -0.075em -0.25em 0.25em 0.1em inset rgba(5, 5, 5, 0.25);
+}
+
+.button-3d:hover .button-inner {
+  background-color: #FF1493 !important;
+  clip-path: inset(clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) round 1vw);
+  box-shadow:
+      /* 1 */
+      0.1em 0.15em 0.05em 0 inset rgba(5, 5, 5, 0.75),
+      /* 2 */
+      -0.025em -0.03em 0.05em 0.025em inset rgba(5, 5, 5, 0.5),
+      /* 3 */
+      0.25em 0.25em 0.2em 0 inset rgba(5, 5, 5, 0.5),
+      /* 4 */
+      0 0 0.05em 0.5em inset rgba(255, 255, 255, 0.15),
+      /* 5 */
+      0 0 0 0 inset rgba(255, 255, 255, 1),
+      /* 6 */
+      0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
+      /* 7 */
+      -0.075em -0.12em 0.2em 0.1em inset rgba(5, 5, 5, 0.25);
+}
+
+.button-3d .button-inner span {
+  position: relative;
+  z-index: 4;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg,
+          rgba(25, 25, 25, 1),
+          rgba(75, 75, 75, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: transform 250ms ease;
+  display: block;
+  will-change: transform;
+  text-shadow: rgba(0, 0, 0, 0.1) 0 0 0.1em;
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display:flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.button-3d:hover .button-inner span {
+  background-color: #FF1493 !important;
+  transform: scale(0.975);
+  cursor: pointer !important;
+  transition: 0.98s ease-in !important;
+}
+
+.button-3d:active .button-inner {
+  transform: scale(0.975);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .g-form-header {
   margin-bottom: 10px !important;
@@ -168,7 +399,9 @@ header p {
   transform: scale(0.98) !important;
 }
 
-
+.footer-txt {
+  margin-bottom: 8px !important;
+}
 
 /* Animation classes */
 .animate-fade-in {
