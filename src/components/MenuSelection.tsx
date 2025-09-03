@@ -96,7 +96,7 @@ export default function MenuSelection({ guest, onBack }: { guest: Guest; onBack:
             style={{ animationDelay: `${i * 100}ms` }}
           >
             <label className="block mb-2 font-medium text-gray-700 capitalize">
-              {course} (Optional)
+              {course}
             </label>
             <Select onValueChange={val => handleSelect(course as Course, val)}>
               <SelectTrigger className="menuSelect bg-white/90 backdrop-blur-sm cursor-pointer">
