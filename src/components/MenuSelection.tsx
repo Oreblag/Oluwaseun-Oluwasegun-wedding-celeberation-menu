@@ -120,7 +120,7 @@ export default function MenuSelection({ guest, onBack }: { guest: Guest; onBack:
       
       <Button 
         onClick={handleSubmit}
-        disabled={!allSelected || submitting}
+        disabled={submitting}
         className="menuSbmtbtn w-full bg-rose-600 hover:bg-rose-700 animate-fade-in"
       >
         {submitting ? 'Submitting...' : 'Submit Order'}
