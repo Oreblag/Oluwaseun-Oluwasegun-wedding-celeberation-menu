@@ -6,18 +6,20 @@ import type { Course, Guest, MenuSelection } from '@/types';
 import '../app/globals.css';
 
 const menuOptions = {
-    main: ['Fried rice and Jollof rice with Moimoi and Salad', 'Chinese rice', 'Ofada rice', 'Amala'],
-    protein: ['Chicken', 'Fish', 'Beef'],
-    beverage: ['Sparkling Water', 'Orange Juice', 'Soft Drinks'],
-    appetizer: ['Caesar Salad', 'Small Chops', 'Asun']
+    main: ['Jollof and Fried rice', 'Ofada rice', 'Kokore', 'Ebiripo', 'Chinese Rice'],
+    sides: ['Moi-moi', 'Salad', 'Plantain'],
+    swallows: ['Amala'],
+    soups: ['Efo Riro', 'Egusi Soup', 'Abula'],
+    protein: ['Peppered Beef', 'Peppered Chicken', 'Peppered Fish (Hake)'],
 };
 
 export default function MenuSelection({ guest, onBack }: { guest: Guest; onBack: () => void }) {
   const [selection, setSelection] = useState<MenuSelection>({
       main: '',
-      protein: '',
-      beverage: '',
-      appetizer: ''
+      sides: '',
+      swallows: '',
+      soups: '',
+      protein: ''
   });
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<{ success: boolean; message: string } | null>(null);

@@ -30,9 +30,10 @@ export async function POST(req: Request) {
     **Table**: ${order.table}
     **Guest**: ${order.name}
     **Main**: ${order.main}
+    **Sides**: ${order.sides}
+    **Swallows**: ${order.swallows}
+    **Soups**: ${order.soups}
     **Protein**: ${order.protein}
-    **Beverage**: ${order.beverage}
-    **Appetizer**: ${order.appetizer}
     `;
   
   await sendToTelegram(message);

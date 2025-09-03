@@ -1,5 +1,5 @@
 export type Wing = 'groom' | 'bride';
-export type Course = 'main' | 'protein' | 'beverage' | 'appetizer';
+export type Course = 'main' | 'beverage';
 
 export interface Guest {
   wing: Wing;
@@ -9,9 +9,10 @@ export interface Guest {
 
 export interface MenuSelection {
     main: string;
+    sides: string;
+    swallows: string;
+    soups: string;
     protein: string;
-    beverage: string;
-    appetizer: string;
-}
+  }
 
 export interface Order extends Guest, MenuSelection {}
