@@ -49,7 +49,7 @@ export default function MenuSelection({ guest, onBack }: { guest: Guest; onBack:
     }
   };
 
-  const allSelected = Object.values(selection).every(val => val !== '');
+  // const allSelected = Object.values(selection).every(val => val !== '');
 
   if (result) {
     return (
@@ -96,11 +96,11 @@ export default function MenuSelection({ guest, onBack }: { guest: Guest; onBack:
             style={{ animationDelay: `${i * 100}ms` }}
           >
             <label className="block mb-2 font-medium text-gray-700 capitalize">
-              {course}
+              {course} (Optional)
             </label>
             <Select onValueChange={val => handleSelect(course as Course, val)}>
               <SelectTrigger className="menuSelect bg-white/90 backdrop-blur-sm cursor-pointer">
-                <SelectValue placeholder={`Select ${course}`} />
+                <SelectValue placeholder={`Select ${course} (Optional)`} />
               </SelectTrigger>
               <SelectContent className="menuSelect-ctnt bg-white/90 text-gray-700 backdrop-blur-sm cursor-pointer">
                 {options.map(option => (
